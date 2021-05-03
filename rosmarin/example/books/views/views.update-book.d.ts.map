@@ -1,0 +1,1 @@
+{"version":3,"file":"views.update-book.d.ts","sourceRoot":"","sources":["../../../../src/example/books/views/views.update-book.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,cAAc,EAAE,MAAM,qBAAqB,CAAA;AACpD,OAAO,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAA;AAIzC,qBAAa,cAAe,SAAQ,cAAc;IAKzC,EAAE,EAAE,OAAO,CAAA;CACnB;AAED,eAAO,MAAM,gBAAgB,mHAA+C,CAAA"}

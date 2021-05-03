@@ -1,0 +1,1 @@
+{"version":3,"file":"get-single-book-as-admin.d.ts","sourceRoot":"","sources":["../../../../src/exampl/book/states/get-single-book-as-admin.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAE,MAAM,mBAAmB,CAAA;AAGjD,qBACa,oBAAqB,SAAQ,aAAa;IACrD,SAAS,CAAC,cAAc,IAAI,IAAI;IAKhC,SAAS,CAAC,qBAAqB,IAAI,OAAO,CAAC,IAAI,CAAC,GAAG,IAAI;CAOxD"}

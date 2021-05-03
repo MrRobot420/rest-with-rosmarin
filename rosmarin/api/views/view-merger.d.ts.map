@@ -1,0 +1,1 @@
+{"version":3,"file":"view-merger.d.ts","sourceRoot":"","sources":["../../../src/api/views/view-merger.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAE,iBAAiB,EAAW,MAAM,cAAc,CAAA;AACxE,OAAO,EAAE,WAAW,EAAE,MAAM,aAAa,CAAA;AAMzC,OAAa,EAAE,MAAM,EAAE,MAAM,MAAM,CAAA;AAYnC,eAAO,MAAM,6BAA6B,SAClC,YAAY,OAAO,CAAC,KACzB,OAOF,CAAA;AAWD,eAAO,MAAM,KAAK,oCACR,iBAAiB,sBAEjB,MAAM,MA+Jf,CAAA"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"property.d.ts","sourceRoot":"","sources":["../../src/metadata-stores/property.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,WAAW,CAAA;AAClC,OAAO,EAAE,WAAW,EAAE,MAAM,UAAU,CAAA;AAEtC,MAAM,WAAW,QAAQ;IACvB,IAAI,EAAE,MAAM,CAAA;IACZ,MAAM,CAAC,EAAE,MAAM,CAAA;IACf,IAAI,CAAC,EAAE,WAAW,CAAA;CACnB"}

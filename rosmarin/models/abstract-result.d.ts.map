@@ -1,0 +1,1 @@
+{"version":3,"file":"abstract-result.d.ts","sourceRoot":"","sources":["../../src/models/abstract-result.ts"],"names":[],"mappings":"AAAA,8BAAsB,cAAc;IAClC,OAAO,CAAC,SAAS,CAAS;IAEnB,SAAS,EAAE,MAAM,CAAA;IAEjB,YAAY,EAAE,MAAM,CAAA;aAEX,OAAO,IAAI,OAAO;IAElC,SAAS;IAIF,QAAQ,IAAI,OAAO;IAInB,QAAQ,IAAI,IAAI;IAChB,QAAQ,CAAC,SAAS,EAAE,MAAM,EAAE,YAAY,EAAE,MAAM,GAAG,IAAI;CAM/D"}

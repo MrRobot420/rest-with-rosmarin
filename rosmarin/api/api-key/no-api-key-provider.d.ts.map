@@ -1,0 +1,1 @@
+{"version":3,"file":"no-api-key-provider.d.ts","sourceRoot":"","sources":["../../../src/api/api-key/no-api-key-provider.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,mBAAmB,EAAE,MAAM,yBAAyB,CAAA;AAC7D,OAAO,EAAE,UAAU,EAAE,MAAM,gBAAgB,CAAA;AAC3C,OAAO,EAAE,YAAY,EAAE,MAAM,kBAAkB,CAAA;AAE/C,qBAAa,gBAAiB,YAAW,mBAAmB;IAC7C,GAAG,CAAC,CAAC,EAAE,YAAY,GAAG,OAAO,CAAC,UAAU,CAAC;CAGvD"}

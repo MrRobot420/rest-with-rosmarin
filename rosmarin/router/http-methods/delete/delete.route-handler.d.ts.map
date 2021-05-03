@@ -1,0 +1,1 @@
+{"version":3,"file":"delete.route-handler.d.ts","sourceRoot":"","sources":["../../../../src/router/http-methods/delete/delete.route-handler.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,uBAAuB,EAAE,MAAM,yBAAyB,CAAA;AACjE,OAAO,EAAE,kBAAkB,EAAE,MAAM,qBAAqB,CAAA;AAUxD,eAAO,MAAM,kBAAkB,qBACX,uBAAuB,EAAE,cAE/B,GAAG,KACd,kBAkDF,CAAA"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"authentication-info-token-to-respond.d.ts","sourceRoot":"","sources":["../../../src/api/security/authentication-info-token-to-respond.ts"],"names":[],"mappings":"AAAA;;GAEG;AACH,qBAAa,gCAAgC;IACpC,eAAe,EAAE,MAAM,CAAA;IAEvB,KAAK,EAAE,MAAM,CAAA;gBAER,eAAe,EAAE,MAAM,EAAE,KAAK,EAAE,MAAM;CAInD"}

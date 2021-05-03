@@ -1,0 +1,1 @@
+{"version":3,"file":"abstract-database-result.js","sourceRoot":"","sources":["../../../src/database/results/abstract-database-result.ts"],"names":[],"mappings":";;;AAAA,kEAA6D;AAE7D,MAAsB,sBAAuB,SAAQ,gCAAc;IAG1D,QAAQ,CAAC,SAAiB,EAAE,QAAgB;QACjD,IAAI,CAAC,yBAAyB,GAAG,QAAQ,GAAG,SAAS,CAAA;IACvD,CAAC;IAEM,WAAW;QAChB,OAAO,IAAI,CAAC,yBAAyB,CAAA;IACvC,CAAC;CACF;AAVD,wDAUC"}

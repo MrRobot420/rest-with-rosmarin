@@ -1,0 +1,1 @@
+{"version":3,"file":"route-handler.d.ts","sourceRoot":"","sources":["../../src/router/route-handler.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,uBAAuB,EAAE,MAAM,qBAAqB,CAAA;AAC7D,OAAO,EAAE,kBAAkB,EAAE,MAAM,qBAAqB,CAAA;AACxD,OAAO,EAGL,UAAU,EAGX,MAAM,gBAAgB,CAAA;AAEvB;;GAEG;AACH,eAAO,MAAM,kBAAkB,qBACX,uBAAuB,EAAE,cAC/B,OAAO,cACP,UAAU,KACrB,kBAkBF,CAAA"}

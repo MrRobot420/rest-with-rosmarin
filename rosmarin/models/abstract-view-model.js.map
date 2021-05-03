@@ -1,0 +1,1 @@
+{"version":3,"file":"abstract-view-model.js","sourceRoot":"","sources":["../../src/models/abstract-view-model.ts"],"names":[],"mappings":";;;;;;;;;;;;AACA,gCAAiC;AAEjC,MAAsB,iBAAiB;CAQtC;AAHC;IAJC,cAAQ,CAAC;QACR,KAAK,EAAE,CAAC,EAAE,IAAI,EAAE,QAAQ,EAAE,EAAE,EAAE,IAAI,EAAE,SAAS,EAAE,CAAC;QAChD,QAAQ,EAAE,KAAK;KAChB,CAAC;;6CACgB;AALpB,8CAQC"}

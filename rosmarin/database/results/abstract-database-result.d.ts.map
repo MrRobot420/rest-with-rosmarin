@@ -1,0 +1,1 @@
+{"version":3,"file":"abstract-database-result.d.ts","sourceRoot":"","sources":["../../../src/database/results/abstract-database-result.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,cAAc,EAAE,MAAM,8BAA8B,CAAA;AAE7D,8BAAsB,sBAAuB,SAAQ,cAAc;IACjE,SAAS,CAAC,yBAAyB,EAAE,MAAM,CAAA;IAEpC,QAAQ,CAAC,SAAS,EAAE,MAAM,EAAE,QAAQ,EAAE,MAAM,GAAG,IAAI;IAInD,WAAW,IAAI,MAAM;CAG7B"}

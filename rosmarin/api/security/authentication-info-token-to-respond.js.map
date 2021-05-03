@@ -1,0 +1,1 @@
+{"version":3,"file":"authentication-info-token-to-respond.js","sourceRoot":"","sources":["../../../src/api/security/authentication-info-token-to-respond.ts"],"names":[],"mappings":";;;AAAA;;GAEG;AACH,MAAa,gCAAgC;IAK3C,YAAY,eAAuB,EAAE,KAAa;QAChD,IAAI,CAAC,eAAe,GAAG,eAAe,CAAA;QACtC,IAAI,CAAC,KAAK,GAAG,KAAK,CAAA;IACpB,CAAC;CACF;AATD,4EASC"}

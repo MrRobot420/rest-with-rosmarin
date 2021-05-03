@@ -1,0 +1,1 @@
+{"version":3,"file":"serialization-schema-builder.d.ts","sourceRoot":"","sources":["../../src/json-schema-builder/serialization-schema-builder.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,WAAW,EAAE,MAAM,UAAU,CAAA;AAQtC,OAAO,EAAE,aAAa,EAAE,iBAAiB,EAAE,MAAM,WAAW,CAAA;AAO5D,OAAO,EAAE,UAAU,EAAE,MAAM,8BAA8B,CAAA;AAwIzD,eAAO,MAAM,wBAAwB,sGAMlC,UAYF,CAAA"}

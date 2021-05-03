@@ -1,0 +1,1 @@
+{"version":3,"file":"authentication-info-provider.d.ts","sourceRoot":"","sources":["../../../src/api/security/authentication-info-provider.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,oBAAoB,EAAE,MAAM,yBAAyB,CAAA;AAC9D,OAAO,EAAE,kBAAkB,EAAE,MAAM,uBAAuB,CAAA;AAE1D,MAAM,WAAW,2BAA2B;IAC1C,GAAG,CAAC,oBAAoB,EAAE,oBAAoB,GAAG,OAAO,CAAC,kBAAkB,CAAC,CAAA;CAC7E"}

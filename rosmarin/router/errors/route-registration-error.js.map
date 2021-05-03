@@ -1,0 +1,1 @@
+{"version":3,"file":"route-registration-error.js","sourceRoot":"","sources":["../../../src/router/errors/route-registration-error.ts"],"names":[],"mappings":";;;AAAA,MAAa,sBAAuB,SAAQ,KAAK;IAC/C,YAAmB,OAAe,EAAkB,OAAgB;QAClE,KAAK,CAAC,OAAO,CAAC,CAAA;QADoC,YAAO,GAAP,OAAO,CAAS;QAGlE,MAAM,CAAC,cAAc,CAAC,IAAI,EAAE,GAAG,CAAC,MAAM,CAAC,SAAS,CAAC,CAAA;IACnD,CAAC;CACF;AAND,wDAMC"}

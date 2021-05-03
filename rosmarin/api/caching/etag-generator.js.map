@@ -1,0 +1,1 @@
+{"version":3,"file":"etag-generator.js","sourceRoot":"","sources":["../../../src/api/caching/etag-generator.ts"],"names":[],"mappings":";;;;;;AAAA,gDAAuB;AAEhB,MAAM,UAAU,GAAG,CAAC,MAAe,EAAU,EAAE;IACpD,OAAO,cAAI,CAAC,IAAI,CAAC,SAAS,CAAC,MAAM,CAAC,CAAC,CAAA,CAAC,sEAAsE;AAC5G,CAAC,CAAA;AAFY,QAAA,UAAU,cAEtB"}
