@@ -1,4 +1,4 @@
-# Let's build a REST API with express.js
+# Let's build a REST API with Rosmarin
 
 Zuerst noch einmal danke für deine Teilnahme!
 
