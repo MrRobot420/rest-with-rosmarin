@@ -69,3 +69,13 @@ class AdminBookView {
 * Link um zu ` POST /books` soll in Antwort enthalten sein
 * Header `x-totalnumberofresults` enthält Anzahl an gesamten `Books`
 * Header `x-numberofresults` enthält Anzahl an zurückgegeben `Books`
+* View:
+```typescript
+class BookView {
+  id: string
+  
+  title: string
+  
+  self: Link
+}
+```
