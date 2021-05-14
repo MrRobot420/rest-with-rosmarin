@@ -6,7 +6,7 @@ import lowdb from 'lowdb/lib/main'
 import { Logger } from 'pino'
 import { container, singleton } from 'tsyringe'
 import constants from 'rosmarin.ts/constants'
-import { NoContentDatabaseResult } from 'rosmarin.ts'
+import { NoContentDatabaseResult, SingleModelDatabaseResult } from 'rosmarin.ts'
 
 export interface BookInDatabase {
   id: string
@@ -70,7 +70,7 @@ export class BookRepository {
     return new NoContentDatabaseResult()
   }
 
-  public async readById(id: string): Promise<Book | undefined> {
+  public async readById(id: string): Promise<SingleModelDatabaseResult<Book> | undefined> {
     const bookInDb: BookInDatabase | undefined = this.db
       .get('books')
       .find((book: BookInDatabase) => book.id === id)
@@ -78,7 +78,7 @@ export class BookRepository {
 
     if (typeof bookInDb === 'undefined') return undefined
 
-    return bookInDbToBook(bookInDb)
+    return new SingleModelDatabaseResult(bookInDbToBook(bookInDb))
   }
 
   public async readAll(
