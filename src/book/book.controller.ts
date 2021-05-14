@@ -22,6 +22,14 @@ export class BookController {
         return new PostBook().configure(req, res)
     }
 
+    @Get<GetAdminBook>({
+        produces: 'application/vnd.book-admin+json',
+        viewConverter: adminBookViewSchema
+    })
+    public getAdminBook(req: HttpRequest, res: HttpResponse): Configured<GetAdminBook> {
+        return new GetAdminBook().configure(req, res)
+    }
+    
     @Get<GetSingleBook>({
         produces: 'application/vnd.book+json',
         viewConverter: bookViewSchema
@@ -30,11 +38,4 @@ export class BookController {
         return new GetSingleBook().configure(req, res)
     }
 
-    @Get<GetAdminBook>({
-        produces: 'application/vnd.book-admin+json',
-        viewConverter: adminBookViewSchema
-    })
-    public getAdminBook(req: HttpRequest, res: HttpResponse): Configured<GetAdminBook> {
-        return new GetAdminBook().configure(req, res)
-    }
 }
