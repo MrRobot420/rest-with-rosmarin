@@ -1,6 +1,6 @@
 import 'reflect-metadata'
 import { RestApplication } from 'rosmarin.ts'
-import { MyApiKeyProvider } from './api-provider'
+import { MyApiKeyInfoProvider, MyAuthenticationInfoProvider } from './api-provider'
 import { BookController } from './book/book.controller'
 
 async function main(): Promise<void> {
@@ -10,7 +10,8 @@ async function main(): Promise<void> {
 
   app.registerController(BookController)
 
-  app.registerApiKeyInfoProvider(MyApiKeyProvider)
+  app.registerAuthenticationInfoProvider(MyAuthenticationInfoProvider)
+  app.registerApiKeyInfoProvider(MyApiKeyInfoProvider)
 
   await app.start(5000)
 }

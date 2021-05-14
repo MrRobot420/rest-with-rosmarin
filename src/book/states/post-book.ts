@@ -14,6 +14,10 @@ export class PostBook extends AbstractPostState<Book, CreateBookView> {
         super()
     }
 
+    public configureState(): void {
+        this.activateApiKeyCheck()
+    }
+
     protected createDatabaseModel(): Book {
         return new Book()
     }
