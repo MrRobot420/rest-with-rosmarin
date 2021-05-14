@@ -6,7 +6,7 @@ import lowdb from 'lowdb/lib/main'
 import { Logger } from 'pino'
 import { container, singleton } from 'tsyringe'
 import constants from 'rosmarin.ts/constants'
-import { NoContentDatabaseResult, SingleModelDatabaseResult } from 'rosmarin.ts'
+import { CollectionModelDatabaseResult, NoContentDatabaseResult, SingleModelDatabaseResult } from 'rosmarin.ts'
 
 export interface BookInDatabase {
   id: string
@@ -85,19 +85,18 @@ export class BookRepository {
     title: string,
     offset: number,
     size: number
-  ): Promise<{ results: Book[]; totalCount: number }> {
+  ): Promise<CollectionModelDatabaseResult<Book>> {
     const books: BookInDatabase[] = this.db
       .get('books')
       .filter((book: BookInDatabase) => book.title.includes(title))
       .sortBy('lastModifiedAt')
       .value()
 
-    const totalCount = books.length
+    const transformedBooks = books.map(book => bookInDbToBook(book))
 
-    return {
-      totalCount,
-      results: this.page(books, offset, size).map<Book>(bookInDbToBook),
-    }
+    const result = new CollectionModelDatabaseResult<Book>(this.page(transformedBooks, offset, size))
+    result.totalNumberOfResult = books.length
+    return result
   }
 
   public async deleteById(id: string): Promise<void> {
