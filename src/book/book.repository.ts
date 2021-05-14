@@ -6,6 +6,7 @@ import lowdb from 'lowdb/lib/main'
 import { Logger } from 'pino'
 import { container, singleton } from 'tsyringe'
 import constants from 'rosmarin.ts/constants'
+import { NoContentDatabaseResult } from 'rosmarin.ts'
 
 export interface BookInDatabase {
   id: string
@@ -53,7 +54,7 @@ export class BookRepository {
     return array.slice(offset, offset + size)
   }
 
-  public async create(book: Book): Promise<void> {
+  public async create(book: Book): Promise<NoContentDatabaseResult> {
     book.id = this.generateId()
     this.db
       .get('books')
@@ -66,6 +67,7 @@ export class BookRepository {
       .write()
 
     this.logger.debug(`Created Book with ID ${book.id}.`)
+    return new NoContentDatabaseResult()
   }
 
   public async readById(id: string): Promise<Book | undefined> {
