@@ -6,6 +6,7 @@ import lowdb from 'lowdb/lib/main'
 import { Logger } from 'pino'
 import { container, singleton } from 'tsyringe'
 import constants from 'rosmarin.ts/constants'
+import { CollectionModelDatabaseResult, NoContentDatabaseResult, SingleModelDatabaseResult } from 'rosmarin.ts'
 
 export interface BookInDatabase {
   id: string
@@ -53,7 +54,7 @@ export class BookRepository {
     return array.slice(offset, offset + size)
   }
 
-  public async create(book: Book): Promise<void> {
+  public async create(book: Book): Promise<NoContentDatabaseResult> {
     book.id = this.generateId()
     this.db
       .get('books')
@@ -66,9 +67,10 @@ export class BookRepository {
       .write()
 
     this.logger.debug(`Created Book with ID ${book.id}.`)
+    return new NoContentDatabaseResult()
   }
 
-  public async readById(id: string): Promise<Book | undefined> {
+  public async readById(id: string): Promise<SingleModelDatabaseResult<Book> | undefined> {
     const bookInDb: BookInDatabase | undefined = this.db
       .get('books')
       .find((book: BookInDatabase) => book.id === id)
@@ -76,26 +78,29 @@ export class BookRepository {
 
     if (typeof bookInDb === 'undefined') return undefined
 
-    return bookInDbToBook(bookInDb)
+    return new SingleModelDatabaseResult(bookInDbToBook(bookInDb))
   }
 
   public async readAll(
     title: string,
     offset: number,
     size: number
-  ): Promise<{ results: Book[]; totalCount: number }> {
+  ): Promise<CollectionModelDatabaseResult<Book>> {
     const books: BookInDatabase[] = this.db
       .get('books')
-      .filter((book: BookInDatabase) => book.title.includes(title))
       .sortBy('lastModifiedAt')
       .value()
 
-    const totalCount = books.length
+    const filteredBooks = books.filter((book: BookInDatabase) => book.title.includes(title))
 
-    return {
-      totalCount,
-      results: this.page(books, offset, size).map<Book>(bookInDbToBook),
-    }
+    const transformedBooks = filteredBooks.map(book => bookInDbToBook(book))
+
+    const result = new CollectionModelDatabaseResult<Book>(this.page(transformedBooks, offset, size))
+    result.totalNumberOfResults = books.length
+    result.numberOfResults = filteredBooks.length
+    console.log(result);
+    
+    return result
   }
 
   public async deleteById(id: string): Promise<void> {
