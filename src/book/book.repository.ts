@@ -88,14 +88,18 @@ export class BookRepository {
   ): Promise<CollectionModelDatabaseResult<Book>> {
     const books: BookInDatabase[] = this.db
       .get('books')
-      .filter((book: BookInDatabase) => book.title.includes(title))
       .sortBy('lastModifiedAt')
       .value()
 
-    const transformedBooks = books.map(book => bookInDbToBook(book))
+    const filteredBooks = books.filter((book: BookInDatabase) => book.title.includes(title))
+
+    const transformedBooks = filteredBooks.map(book => bookInDbToBook(book))
 
     const result = new CollectionModelDatabaseResult<Book>(this.page(transformedBooks, offset, size))
-    result.totalNumberOfResult = books.length
+    result.totalNumberOfResults = books.length
+    result.numberOfResults = filteredBooks.length
+    console.log(result);
+    
     return result
   }
 

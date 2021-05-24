@@ -1,7 +1,9 @@
-import { AbstractViewModel, buildViewConverter } from 'rosmarin.ts'
+import { AbstractViewModel, buildViewConverter, collectionView, viewProp } from 'rosmarin.ts'
 import { Book } from '../book.model'
 
+@collectionView()
 export class BookCollectionView extends AbstractViewModel {
+    @viewProp()
     title: string
 }
 

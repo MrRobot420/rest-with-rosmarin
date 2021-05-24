@@ -21,7 +21,7 @@ export class GetBookCollection extends AbstractGetCollectionStateWithOffsetSizeP
     }
     
     protected defineTransitionLinks(): void | Promise<void> {
-        this.addLink('/books', 'getBooks', 'application/vnd.book+json')
+        this.addLink('/books', 'createNewBook', 'application/vnd.book+json')
     }
 
     protected extractFromRequest(): void {

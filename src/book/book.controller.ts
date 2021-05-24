@@ -43,8 +43,8 @@ export class BookController {
     @GetCollection<GetBookCollection>({
         produces: 'application/vnd.book+json',
         viewConverter: bookCollectionViewSchema,
-      })
-      public getBooks(req: HttpRequest, res: HttpResponse): Configured<GetBookCollection> {
+    })
+    public getBooks(req: HttpRequest, res: HttpResponse): Configured<GetBookCollection> {
         return new GetBookCollection().configure(req, res)
-      }
+    }
 }
